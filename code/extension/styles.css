@@ -1,0 +1,174 @@
+@font-face {
+  font-family: 'Outfit'; /* Specify the font family name */
+  src: url('assets/fonts/Outfit-Regular.ttf') format('truetype');
+  font-weight: normal; /* Specify the font weight */
+  font-style: normal; /* Specify the font style */
+}
+
+@font-face {
+  font-family: 'Manrope'; /* Specify the font family name */
+  src: url('assets/fonts/Manrope-Regular.ttf') format('truetype');
+  font-weight: normal; /* Specify the font weight */
+  font-style: normal; /* Specify the font style */
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    min-width: 350px;
+  }
+  
+  header {
+    background-color: #fb5730;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+  }
+  
+  .title {
+    margin: 0;
+  }
+  
+  .container {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .analyzebutton {
+    text-align: center;
+  }
+
+  .results-container {
+    padding: 10px;
+    display: none;
+  }
+  
+  .result {
+    padding: 10px;
+    border-radius: 5px;
+    color: #111;
+  }
+  
+  .paragraph-with-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .tooltip-container {
+    position: relative; 
+    margin-left: 10px; 
+  }
+  
+  .tooltip-icon {
+    cursor: pointer;
+    width: 15px; /* Adjust the size of the icon */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .tooltip-text {
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .classification-icon {
+    display: block;
+    margin: 5px auto; 
+    width: 50px; /* Adjust the width of the icon */
+    height: 50px; /* Adjust the height of the icon */
+  }
+
+  .category-text {
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+  }
+
+  .item-name {
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+  }
+
+  .warning-text {
+    font-family: "Manrope", sans-serif;
+    text-align: center;
+    color: yellow;
+  }
+
+  .summary-details{
+    margin-top: 10px; 
+    font-family: "Manrope", sans-serif;
+    text-align: center;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .download-button {
+    display: block; 
+    margin: 0 auto; 
+    padding: 10px 10px;
+    margin-bottom: 5px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:disabled,
+  button[disabled]{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+  }
+
+  .download-button:hover {
+    background-color: #45a049;
+  }
+  
+  
+
+  

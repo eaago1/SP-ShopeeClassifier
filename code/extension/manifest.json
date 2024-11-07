@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Shopee Product Classifier",
+    "version": "1.0",
+    "description": "Perform sentiment analysis on Shopee reviews to classify a product",
+    "permissions": ["activeTab", "downloads"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "extension.html"
+    }
+  }
+  

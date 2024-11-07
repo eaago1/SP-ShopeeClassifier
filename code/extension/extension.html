@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sentiment Analysis Extension</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 class="title">Shopee Product Classifier</h1>
+  </header>
+  <div class="container">
+    <div class="paragraph-with-icon">
+      <p>Enter Shopee product link:</p>
+      <div class="tooltip-container">
+        <img class="tooltip-icon" src="assets/info_icon.png" alt="Info Icon">
+        <div class="tooltip-text">Shopee link must have the following: <br>`i.(numbers).(numbers)`</div>
+      </div>
+    </div>
+    <textarea id="inputText" rows="3" cols="40" placeholder="https://shopee.ph/Clifton-Guitar-Amplifier-Ga-15-i.20916308.15703818537"></textarea>
+  </div>
+  <div class="analyzebutton">
+    <button id="analyzeButton" type="button">Analyze</button>
+  </div>
+  <div class="results-container"> 
+    <div class="results"></div> 
+  </div>
+  <script src="extension.js"></script>
+</body>
+</html>
